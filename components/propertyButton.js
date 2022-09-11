@@ -1,14 +1,23 @@
 import React from 'react'
 
-const PropertyButton = ({ property, onClick }) => {
-  return (
-    <button
-      className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded border-2 border-black'
-      onClick={onClick}
-    >
-      {property}
-    </button>
-  )
+const PropertyButton = ({ show, property, onClick }) => {
+  if (show[property]) {
+    return (
+      <div className='flex justify-between'>
+        <button
+          className='w-4/5 h-16 bg-transparent text-white font-bold py-2 px-4 rounded border-4 border-black'
+          onClick={() => onClick(property)}
+        >
+          {property}
+        </button>
+        <button className='h-16 w-16 p-1 border-4 border-black rounded text-white font-bold'>
+          L
+        </button>
+      </div>
+    )
+  } else {
+    return null  
+  }
 }
 
 export default PropertyButton
