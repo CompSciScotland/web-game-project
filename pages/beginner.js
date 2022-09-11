@@ -1,4 +1,7 @@
 import Head from 'next/head'
+import Image from 'next/image'
+
+import snakeIMG from '../public/snake.png'
 
 import { useState } from 'react'
 
@@ -13,10 +16,9 @@ export default function Beginner() {
   })
 
   const toggleShow = (property) => {
-    setShow({
-      ...show,
-      [property]: !show[property]
-    })
+    let newState = {...show}
+    Object.keys(newState).forEach(key => key === property ? null: newState[key] = !newState[key])
+    setShow(newState)
   }
   return (
     <div className='h-full'>
@@ -36,7 +38,11 @@ export default function Beginner() {
         </div>
         <div className='col-start-3 col-span-2 row-start-1 row-span-2'>
           <div className='h-full flex flex-col justify-start px-10'>
-            <div className='h-4/5 aspect-square border-black border-4 rounded'></div>
+            <div className='h-4/5 aspect-square border-black border-4 rounded'>
+              <div className='h-full w-full relative'>
+                <Image src={snakeIMG} alt='Snake game image' layout='fill' objectFit='scale-down' height={350} width={600}/>
+              </div>
+            </div>
           </div>
         </div>
         <div className='col-start-3 col-span-2 row-start-3 row-span-1'>
