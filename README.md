@@ -6,5 +6,5 @@ example project https://www.educative.io/blog/javascript-snake-game-tutorial and
 
 screenshots in figma
 
-Prototype react plugins http://satya164.xyz/react-simple-code-editor/ https://github.com/svrcekmichal/react-sketchpad
+Prototype react plugins http://satya164.xyz/react-simple-code-editor/ https://github.com/svrcekmichal/react-sketchpad  https://github.com/wyozi/react-pptx
 
