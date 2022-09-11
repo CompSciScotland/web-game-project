@@ -11,6 +11,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div className='h-14 mb-5 bg-red-500 border-4 border-black flex justify-center items-center'>
+          <span className='text-2xl'>
+            S2 level
+          </span>
+      </div>
       <div className='mt-20 h-1/2 flex flex-col justify-between'>
         <Link href='/beginner'>
           <a className='h-20  bg-green-500 border-4 border-black rounded-lg flex justify-center items-center'>
