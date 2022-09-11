@@ -10,9 +10,10 @@ const PropertyButton = ({ show, property, onClick }) => {
         >
           {property}
         </button>
-        <button className='h-16 w-16 p-1 border-4 border-black rounded text-white font-bold'>
-          L
-        </button>
+        <div className='relative'>
+          <button className='h-16 w-16 p-1 border-4 border-black rounded text-white font-bold'>L</button>
+          <img className='abolute right-[-50px]' src="./learn-options.png"></img>
+        </div>
       </div>
     )
   } else {

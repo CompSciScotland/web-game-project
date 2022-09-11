@@ -29,9 +29,9 @@ export default function Beginner() {
         <div className='col-start-1 col-span-2 row-start-1 row-span-3'>
           <div className='h-full flex flex-col justify-between'>
             <PropertyButton show={show} property="Movement" onClick={toggleShow}/>
-            <PropertyButton show={show} property="Speed" onClick={toggleShow}/>
-            <PropertyButton show={show} property="Obstacles" onClick={toggleShow}/>
-            <PropertyButton show={show} property="Score" onClick={toggleShow}/>
+            {/* <PropertyButton show={show} property="Speed" onClick={toggleShow}/> */}
+            {/* <PropertyButton show={show} property="Obstacles" onClick={toggleShow}/> */}
+            {/* <PropertyButton show={show} property="Score" onClick={toggleShow}/> */}
           </div>
         </div>
         <div className='col-start-3 col-span-2 row-start-1 row-span-2'>
